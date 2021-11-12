@@ -3,7 +3,7 @@ const axios = require('axios');
 
 require('dotenv-safe').config();
 
-const movieController = async (movieUrl) => {    
+const getMovieData = async (movieUrl) => {    
     const movieToken = getMovieToken(movieUrl);
 
     if(movieToken === 'INVALID_MOVIE_URL') return {error : true, data : {message: 'Invalid Movie URL'}};
@@ -17,4 +17,6 @@ const movieController = async (movieUrl) => {
     return movieData;
 }
 
-module.exports = movieController;
+module.exports = {
+    getMovieData
+};
