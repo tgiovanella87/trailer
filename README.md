@@ -50,4 +50,4 @@ npm run test:cover
 
 * Only movies was tested;
 * Maybe will be necessary to improve the unit tests to a better coverage before the go live;
-* Implements a multicache using memory and Redis.
+* To Implement a multicache using memory and Redis.
